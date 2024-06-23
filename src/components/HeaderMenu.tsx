@@ -87,7 +87,7 @@ export function HeaderMenu() {
           
 
           <Group visibleFrom="sm">
-          <a href="/Home" className={classes.link}>
+          <a href="/" className={classes.link}>
               Home
             </a>
 

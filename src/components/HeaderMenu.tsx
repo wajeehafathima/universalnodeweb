@@ -14,6 +14,9 @@ import {
   rem,
   useMantineTheme,
   Title,
+  Collapse,
+  Drawer,
+  ScrollArea,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import {
@@ -145,7 +148,41 @@ export function HeaderMenu() {
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
-     
+      
+      {/*This is for mobile hamburger menu*/}
+      <Drawer
+        opened={drawerOpened}
+        onClose={closeDrawer}
+        size="100%"
+        padding="md"
+        title="Universal Electricals"
+        hiddenFrom="sm"
+        zIndex={1000000}
+      >
+        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+          <Divider my="sm" />
+
+          <a href="/" className={classes.link}>
+            Home
+          </a>
+          <UnstyledButton className={classes.link} onClick={toggleLinks}>
+            <Center inline>
+              <Box component="span" mr={5}>
+                Products
+              </Box>
+              <IconChevronDown
+                style={{ width: rem(16), height: rem(16) }}
+                color={theme.colors.myColor[7]}
+              />
+            </Center>
+          </UnstyledButton>
+          <Collapse in={linksOpened}>{links}</Collapse>
+          <a href="#" className={classes.link}>
+            About Us
+          </a>
+          <Button color={theme.colors.myColor[9]} onClick={() => location.assign('/ContactUs')}>Contact</Button>
+        </ScrollArea>
+      </Drawer>
     </Box>
   );
 }

@@ -33,6 +33,10 @@
   text-align: center;
 }
 
+.marginbottom {
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5) !important;
+}
+
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
@@ -81,7 +85,7 @@
 }
 
 .logo {
-  height: 1em;
+  height: 6em;
 }
 
 @media (max-width: 600px) {
@@ -89,4 +93,10 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.wrapper {
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+  min-height: rem(650px);
 }

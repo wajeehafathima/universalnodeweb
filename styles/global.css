@@ -30,3 +30,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+ .input {
+    background-color: var(--mantine-color-white);
+    border-color: var(--mantine-color-gray-4);
+    color: var(--mantine-color-black);
+  
+    &::placeholder {
+      color: var(--mantine-color-gray-5);
+    }
+  }

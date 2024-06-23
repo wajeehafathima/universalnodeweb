@@ -40,7 +40,7 @@ export function Footer() {
             </Flex>
             <Flex align="center" mt="xs">
               <IconMail color="gray" size={20} />
-              <Text c="dimmed" ml="sm" size="sm">mujeeb2768@yahoo.com</Text>
+              <Text c="dimmed" ml="sm" size="sm">universalelectricals369@gmail.com</Text>
             </Flex>
             <Flex align="center" mt="xs">
               <IconPhone color="gray" size={20} />

@@ -27,8 +27,8 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-  { title: 'Email', description: 'mujeeb2768@yahoo.com', icon: IconAt },
-  { title: 'Phone', description: '9440427893', icon: IconPhone },
+  { title: 'Email', description: 'universalelectricals369@gmail.com', icon: IconAt },
+  { title: 'Phone', description: '+91 9440427893', icon: IconPhone },
   { title: 'Address', description: 'H. No 8-1-398/PM/189, Paramount Hills, Tolichowki, Hyderabad, Telangana', icon: IconMapPin },
   { title: 'Working hours', description: '8 a.m. – 9 p.m.', icon: IconSun },
 ];

@@ -24,8 +24,6 @@ const theme: MantineThemeOverride = {
   },
 };
 
-
-
 function App({ Component, pageProps }: AppProps) {
 
   const router = useRouter();
@@ -35,11 +33,11 @@ function App({ Component, pageProps }: AppProps) {
       {isAppShellRoute ? (
           <Component {...pageProps} />
         ) : (
-          <div>
-            <HeaderMenu></HeaderMenu>
+          <>
+          <HeaderMenu></HeaderMenu>
             <Component {...pageProps} />
             <Footer></Footer>
-          </div>
+          </>
         )}
     </MantineProvider>
   );

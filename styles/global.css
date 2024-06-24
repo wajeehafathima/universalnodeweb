@@ -31,7 +31,7 @@ img {
   height: auto;
 }
 
- .input {
+.input {
     background-color: var(--mantine-color-white);
     border-color: var(--mantine-color-gray-4);
     color: var(--mantine-color-black);
@@ -39,4 +39,4 @@ img {
     &::placeholder {
       color: var(--mantine-color-gray-5);
     }
-  }
+}

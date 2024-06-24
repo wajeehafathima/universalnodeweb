@@ -82,8 +82,9 @@ export function HeaderMenu() {
   return (
     <Box pb={0}>
       <header className={classes.header}>
-        <Group justify="space-between"h="100%">
-        <Group justify="space-between" h="100%">
+        <Group justify="space-between">
+          
+        <Group>
           <img src="/ue.svg" alt="Universal Electricals" className={styles.logo} />
           <Title tt="uppercase" c="#c91a25" fw={800} size="25px" lh="md"> Universal Electricals</Title>
         </Group>
@@ -167,7 +168,7 @@ export function HeaderMenu() {
           </a>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
-              <Box component="span" mr={5}>
+              <Box component="span" mr={5} onClick={() => location.assign('/products/ProductsLayout')}>
                 Products
               </Box>
               <IconChevronDown

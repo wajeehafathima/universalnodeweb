@@ -12,24 +12,7 @@ import {
   import { ContactIconsList } from '../components/ContactIcons';
   import '@mantine/core/styles.css'; // Import Mantine styles
   import classes from '../../styles/ContactUs.module.css';
-  import { MantineProvider, MantineThemeOverride } from '@mantine/core';
 
-  const theme: MantineThemeOverride = {
-    colors: {
-      myColor: [
-        '#ffeaec',
-        '#fdd4d6',
-        '#f4a7ac',
-        '#ec777e',
-        '#e64f57',
-        '#e3353f',
-        '#e22732',
-        '#c91a25',
-        '#b31220',
-        '#9e0419',
-      ],
-    },
-  };
 
   const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
   
@@ -41,7 +24,6 @@ import {
     ));
   
     return (
-      <MantineProvider theme={theme}>
       <div className={classes.wrapper}>
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
           <div>
@@ -82,6 +64,5 @@ import {
           </div>
         </SimpleGrid>
       </div>
-      </MantineProvider>
     );
   }

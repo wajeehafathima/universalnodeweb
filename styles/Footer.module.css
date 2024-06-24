@@ -77,3 +77,9 @@
   padding-top: rem(3px);
   padding-bottom: rem(3px);
 }
+
+.breakword {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}

@@ -38,7 +38,7 @@ export function Footer() {
               <IconMapPin color="gray" size={35} />
               <Text c="dimmed" ml="sm" size="sm">H. No 8-1-398/PM/189, Paramount Hills, Tolichowki, Hyderabad, Telangana</Text>
             </Flex>
-            <Flex align="center" mt="xs">
+            <Flex align="center" mt="xs"  className={classes.breakword}>
               <IconMail color="gray" size={20} />
               <Text c="dimmed" ml="sm" size="sm">universalelectricals369@gmail.com</Text>
             </Flex>

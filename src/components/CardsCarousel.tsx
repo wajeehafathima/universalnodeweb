@@ -11,13 +11,18 @@ const data = [
     category: '',
   },
   {
-    image: '/images/ACB.jpg',
-    title: 'ACB',
+    image: '/images/MCCB.jpg',
+    title: 'MCCB',
     category: '',
   },
   {
     image: '/images/Relay.jpg',
     title: 'Relay',
+    category: '',
+  },
+  {
+    image: '/images/Relay.jpg',
+    title: 'Halonix Products',
     category: '',
   }
 ];

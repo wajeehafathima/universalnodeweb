@@ -54,6 +54,11 @@ const mockdata = [
     title: 'LT Metering',
     description: 'Metering and Power Measurement.',
   },
+  {
+    icon: IconBook,
+    title: 'Halonix Products',
+    description: 'Halonix Products',
+  }
 ];
 
 export function HeaderMenu() {
